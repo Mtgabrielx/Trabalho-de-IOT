@@ -19,14 +19,14 @@ unsigned long lowpulseoccupancy  = 0;
 float ratio         = 0.0;
 float concentration = 0.0;
 
-const char* ssid     = "Fred_2G";
-const char* password = "8532533637";
+const char* ssid     = "";
+const char* password = "";
 
 const char* mqtt_server = "82.25.77.19";
 const int   mqtt_port   = 1883;
 
-const char* mqtt_user   = "admin";
-const char* mqtt_pass   = "647431b5ca55b04fdf3c2fce31ef1915";
+const char* mqtt_user   = "";
+const char* mqtt_pass   = "";
 
 // tópicos
 const char* topic_temp   = "sensor.temperatura";
