@@ -11,10 +11,10 @@ def make_callback(csv_path: str):
 
 class RabbitmqConsumer:
     def __init__(self, callback, queue):
-        self.__host = "otimiris.com.br"
+        self.__host = ""
         self.__port = 5672
-        self.__username = "admin"
-        self.__password = "647431b5ca55b04fdf3c2fce31ef1915"
+        self.__username = ""
+        self.__password = ""
         self.__queue = queue
         self.__callback = callback
         self.__connection = None
@@ -102,3 +102,4 @@ if __name__ == "__main__":
         for t in threads:
             t.join(timeout=5)
         print("Todos os consumidores finalizados.")
+
