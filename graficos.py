@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 ARQUIVO = "coleta.csv"
-COLUNAS  = ["fumaca","umidade","temperatura,gas"]
+COLUNAS  = ["fumaca","umidade","temperatura","gas"]
 
 df = pd.read_csv(ARQUIVO, sep=',')
 
@@ -19,4 +19,5 @@ for c in cols:
     plt.ylabel(c)
     plt.title(f"{c} vs tempo (sequencial)")
     plt.grid(True)
+
     plt.show() 
